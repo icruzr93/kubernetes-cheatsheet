@@ -1,11 +1,13 @@
-# create deployment
+# Kubernetes Cheatsheet
+
+### create deployment
 
 kubectl apply -f webserver-deployment.yml
 
-# get deployments
+### get deployments
 
 kubectl get deployments
 
-# get pods
+### get pods
 
 kubectl get pods

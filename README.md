@@ -21,5 +21,5 @@ minikube service webserver-deployment --url
 ### Scale a replicaset named 'foo' to 3.
 kubectl scale --replicas=3 rs/foo
 
-## Scale a resource identified by type and name specified in "foo.yaml" to 3.
+### Scale a resource identified by type and name specified in "foo.yaml" to 3.
 kubectl scale --replicas=3 -f foo.yaml

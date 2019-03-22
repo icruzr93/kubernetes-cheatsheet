@@ -1,13 +1,19 @@
 # Kubernetes Cheatsheet
 
-### create deployment
-
+### - Greate deployment
 kubectl apply -f webserver-deployment.yml
 
-### get deployments
-
+### - Get deployments
 kubectl get deployments
 
-### get pods
-
+### - Get pods
 kubectl get pods
+
+### - Expose deployment
+kubectl expose deployment webserver-deployment --type=LoadBalancer --port=80
+
+### - Get services
+kubectl get services
+
+### - Get the URL for a service
+minikube service webserver-deployment --url
